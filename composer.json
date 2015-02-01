@@ -4,6 +4,7 @@
     "type": "Application",
     "license": "GPL-2.0+",
     "require": {
+        "ext-mbstring": "*",
         "php": ">=5.0"
     },
     "minimum-stability": "stable",
