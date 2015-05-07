@@ -27,12 +27,12 @@ foreach($service_blob as $service_provider => $service_list) {
     }
     foreach ($service_list as $some_service) {
         // looks for tags of 'postgres'
-        if (in_array('postgresql', $some_service['tags'], true)) {
+        if (in_array('postgresql93', $some_service['tags'], true)) {
             $postgres_services[] = $some_service;
             continue;
         }
         // look for a service where the name includes 'postgres'
-        if (strpos($some_service['label'], 'postgresql') !== false) {
+        if (strpos($some_service['label'], 'postgresql93') !== false) {
             $postgres_services[] = $some_service;
         }
     }
