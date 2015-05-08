@@ -45,12 +45,12 @@ for ($i = 1; $i <= count($postgres_services); $i++) {
     /* Display name */
     $conf['servers'][$i]['name'] = 'PostgreSQL';
     /* Server parameters */
-    $conf['Servers'][$i]['host'] = $db['hostname'];
-    $conf['Servers'][$i]['port'] = $db['port'];
-    $conf['Servers'][$i]['connect_type'] = 'tcp';
-    $conf['Servers'][$i]['sslmode'] = 'allow';
-    $conf['Servers'][$i]['extension'] = 'pgs';
-    $conf['Servers'][$i]['defaultdb'] = $db['dbname'];
+    $conf['servers'][$i]['host'] = $db['hostname'];
+    $conf['servers'][$i]['port'] = $db['port'];
+    $conf['servers'][$i]['connect_type'] = 'tcp';
+    $conf['servers'][$i]['sslmode'] = 'allow';
+    $conf['servers'][$i]['extension'] = 'pgs';
+    $conf['servers'][$i]['defaultdb'] = $db['dbname'];
 }
 
 
